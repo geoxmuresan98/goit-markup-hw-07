@@ -9,50 +9,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="/sass/main.css">
   </head>
   <body class="body">
 <!--ModalSection-->
     <div class="modal is-hidden" data-modal>
-      <div class="inner-div">
+      <div class="modal-container">
         <button data-modal-close class="modal-close-button"><svg width="11" height="11">
           <use href="./Images/icon.svg.svg#icon-cross"></use>
       </svg></button>
 
-      <form class="modal-form-style" name="costumer-info" autocomplete="on">
-        <h3 class="form-title-style">Leave your information and we'll call you back</h3>
+      <form class="modal-form" name="costumer-info" autocomplete="on">
+        <h3 class="modal-form__title">Leave your information and we'll call you back</h3>
         <div class="label-container">
-          <label class="label-style">Name<input class="modal-input-style" type="text" name="user name"><svg class="modal-svg-icon" width="12"
+          <label class="label">Name<input class="label__input" type="text" name="user name"><svg class="label__svg" width="12"
             height="12">
               <use href="./Images/icon.svg.svg#icon-person"></use>
             </svg></label>
         </div>
 
         <div class="label-container">
-          <label class="label-style">Telephone<input class="modal-input-style" type="tel" name="phone number"><svg class="modal-svg-icon" width="13"
+          <label class="label">Telephone<input class="label__input" type="tel" name="phone number"><svg class="label__svg" width="13"
             height="13">
               <use href="./Images/icon.svg.svg#icon-telephone"></use>
             </svg></label>
         </div>
 
         <div class="label-container">
-          <label class="label-style">E-mail<input class="modal-input-style" type="email" name="email"><svg class="modal-svg-icon" width="15"
+          <label class="label">E-mail<input class="label__input" type="email" name="email"><svg class="modal-svg-icon" width="15"
             height="12">
               <use href="./Images/icon.svg.svg#icon-mail"></use>
             </svg></label>
         </div>
 
-        <label class="label-style">Comments<textarea class="textarea-modal-style" name="comments" cols="30" rows="5"
+        <label class="label">Comments<textarea class="textarea-modal-style" name="comments" cols="30" rows="5"
             placeholder="Enter the text"></textarea></label>
 
-        <label class="modal-check-box terms"><input class="checkbox-hide" type="checkbox"><span class="replace-checkbox"><svg
+        <label class="checkbox terms"><input class="checkbox__hide" type="checkbox"><span class="checkbox__replace"><svg
               class="modal-svg" width="15" height="12">
               <use href="./Images/icon.svg.svg#icon-checkbox"></use>
-            </svg></span>I agree with the letter and accept the<a class="terms-blue-style" href="#">Terms and Conditions</a></label>
+            </svg></span>I agree with the letter and accept the<a class="checkbox__terms-style" href="#">Terms and Conditions</a></label>
             
-            <div class="modal-button-style"><button class="submit-button-style" type="submit">Send</button></div>
+            <div class="modal-button__style"><button class="submit-button-style" type="submit">Send</button></div>
 
       </form>
 
@@ -62,19 +62,19 @@
     <header class="header-section">
       <div class="header-container container">
         <a class="logowebstudio" href="./Images/WebStudio.png">Web</a>
-        <nav class="header-navigation">
-          <ul class="navigation-list unstyled-list">
-            <li class="link-bottom-border" ><a class="link-style" href="/index.html">Studio</a></li>
-            <li><a class="link-style" href="./Portofolio.html">Portofolio</a></li>
-            <li><a class="link-style" href="Contacts.html">Contacts</a></li>
+        <nav class="header-block">
+          <ul class="navigation-block__grid unstyled-list">
+            <li class="navigation-block__bottom-border" ><a class="navigation-block__link-style" href="/index.html">Studio</a></li>
+            <li><a class="navigation-block__link-style" href="./Portofolio.html">Portofolio</a></li>
+            <li><a class="navigation-block__link-style" href="Contacts.html">Contacts</a></li>
           </ul>
-          <ul class="right-navigation-list unstyled-list">
+          <ul class="right-navigation__grid unstyled-list">
             <li class="header-icon-items">
-              <a class="contact-mail" href="mailto:info@devstudio.com"><svg class="envelope" width="16" height="12">
+              <a class="navigation-block__link-style right-side-style" href="mailto:info@devstudio.com"><svg class="envelope" width="16" height="12">
                   <use  href="./Images/icon.svg.svg#icon-envelope"></use></svg>info@devstudio.com</a> 
             </li>
             <li class="header-icon-items">
-              <a class="contact-phone" href="tel:+12127724150"><svg class="phone" width="16" height="12">
+              <a class="navigation-block__link-style right-side-style" href="tel:+12127724150"><svg class="phone" width="16" height="12">
                   <use  href="./Images/icon.svg.svg#icon-phone"
                   ></use></svg>+1 212-772-4150</a>
             </li>
@@ -86,64 +86,64 @@
     <main>
       <section class="efective-section">
         <div class="efective-container container">
-          <h1 class="title-color">
+          <h1 class="efective-section__title">
             EFFECTIVE SOLUTIONS FOR <br />
             YOUR BUSINESS
           </h1>
-          <button data-modal-open class="request-botton">Request our service</button>
+          <button data-modal-open class="efective-section__request-button">Request our service</button>
         </div>
       </section>
-
+      <!--Abiities Section-->
       <section class="abilities-section section">
         <div class="abilities-container container">
-          <ul class="abilities-vector unstyled-list">
-            <li>
+          <ul class="abilities-section__vector unstyled-list">
+            <li class="abilities-section__item" >
               <svg width="70" height="70">
                 <use href="./Images/icon.svg.svg#icon-antenna"></use>
               </svg>
             </li>
-            <li>
+            <li class="abilities-section__item">
               <svg width="70" height="70">
                 <use href="./Images/icon.svg.svg#icon-clock"></use>
               </svg>
             </li>
-            <li>
+            <li class="abilities-section__item" >
               <svg width="70" height="70">
                 <use href="./Images/icon.svg.svg#icon-diagram"></use>
               </svg>
             </li>
-            <li>
+            <li class="abilities-section__item">
               <svg width="70" height="70">
                 <use href="./Images/icon.svg.svg#icon-astronaut"></use>
               </svg>
             </li>
           </ul>
 
-          <ul class="abilities unstyled-list">
-            <li>
-              <h3>ATTENTION TO DETAILS</h3>
-              <p>
+          <ul class="abilities-grid unstyled-list">
+            <li class="abilities">
+              <h3 class="abilities__title">ATTENTION TO DETAILS</h3>
+              <p class="abilities__description">
                 We go into all the details and processes of your business to
                 develop a customized solution.
               </p>
             </li>
-            <li>
-              <h3>PUNCTUALITY</h3>
-              <p>
+            <li class="abilities" >
+              <h3 class="abilities__title">PUNCTUALITY</h3>
+              <p class="abilities__description">
                 With us, you can feel safe and secure. An important principle of
                 the company: respect your time and deadlines.
               </p>
             </li>
-            <li>
-              <h3>PLANNING</h3>
-              <p>
+            <li class="abilities">
+              <h3 class="abilities__title">PLANNING</h3>
+              <p class="abilities__description">
                 You will be able to observe and participate in every phase of
                 solution development and implementation.
               </p>
             </li>
-            <li>
-              <h3>MODERN TECHNOLOGIES</h3>
-              <p>
+            <li class="abilities">
+              <h3 class="abilities__title">MODERN TECHNOLOGIES</h3>
+              <p class="abilities__description">
                 We use innovative tools to solve assigned tasks. It's time to
                 simplify work processes.
               </p>
@@ -151,21 +151,22 @@
           </ul>
         </div>
       </section>
-
+      <!--WhatWeDoSection-->
       <section class="what-we-do-section">
         <div class="what-we-do-container container">
-          <h2 class="title-what-we-do">What we do</h2>
-          <ul class="what-we-do-photo unstyled-list">
-            <li>
+          <h2 class="what-we-do-section__title">What we do</h2>
+          <ul class="work-grid unstyled-list">
+            <li class="work-grid__item">
               <img width="370px" height="294px" src="Images/img1.jpg" alt="" />
-              <p class="what-we-do-description">DESKTOP APPS</p>
+              <p class="work-grid__description">DESKTOP APPS</p>
             </li>
-            <li>
+            <li class="work-grid__item"> 
               <img width="370px" height="294px" src="Images/img2.jpg" alt="" />
-              <p class="what-we-do-description">MOBILE APPS</p>
+              <p class="work-grid__description">MOBILE APPS</p>
             </li>
-            <li><img width="370px" height="294px" src="Images/img3.jpg" alt="" />
-            <p class="what-we-do-description">DESIGN SOLUTIONS</p>
+            <li class="work-grid__item">
+              <img width="370px" height="294px" src="Images/img3.jpg" alt="" />
+            <p class="work-grid__description">DESIGN SOLUTIONS</p>
             </li>
           </ul>
         </div>
@@ -173,45 +174,74 @@
 
       <section class="our-team-section section">
         <div class="our-team-container container">
-          <h2 class="title-our-team">Our Team</h2>
-          <ul class="our-team-photo unstyled-list">
-            <li>
-              <div class="border-line2">
-                <img
-                  width="270px"
-                  height="260px"
-                  src="Images/img11.jpg"
-                  alt="TeamMember"
-                />
+          <h2 class="our-team-section__title">Our Team</h2>
+          <ul class="team unstyled-list">
+            <li class="team__item">
+                <img class="team__image" width="270px" height="260px"src="Images/img11.jpg"alt="TeamMember"/>
                 <h3>Christopher Walker</h3>
                 <p>Product Designer</p>
                 <div class="our-team-vectorial">
-                  <ul class="team-vectorials unstyled-list">
-                    <li>
-                      <a href="#">
+                  <ul class="team-vectorials-grid unstyled-list">
+                    <li class="team-vectorials-grid__item"><a class="team-vectorials-grid__svg" href="#"><svg width="20" height="20">
+                          <use href="./Images/icon.svg.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-vectorials-grid__item">
+                      <a class="team-vectorials-grid__svg" href="#"><svg width="20" height="20">
+                          <use href="./Images/icon.svg.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-vectorials-grid__item">
+                      <a  class="team-vectorials-grid__svg" href="#"><svg width="20" height="20">
+                          <use href="./Images/icon.svg.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-vectorials-grid__item" >
+                      <a class="team-vectorials-grid__svg" href="#">
                         <svg width="20" height="20">
+                          <use
+                            href="./Images/icon.svg.svg#icon-linkedin2"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+              </div>
+            </li>
+            <li class="team__item">
+                <img class="team__image"width="270px"height="260px"src="Images/img12.jpg"alt="TeamMember"
+                />
+                <h3 class="team__name">Kylie Evans</h3>
+                <p class="team__accupation">Frontend Developer</p>
+                <div class="our-team-vectorial">
+                  <ul class="team-vectorials-grid unstyled-list">
+                    <li class="team-vectorials-grid__item">
+                      <a class="team-vectorials-grid__svg" href="#"><svg width="20" height="20">
                           <use
                             href="./Images/icon.svg.svg#icon-instagram"
                           ></use>
                         </svg>
                       </a>
                     </li>
-                    <li>
-                      <a href="#">
+                    <li class="team-vectorials-grid__item">
+                      <a class="team-vectorials-grid__svg" href="#">
                         <svg width="20" height="20">
                           <use href="./Images/icon.svg.svg#icon-twitter"></use>
                         </svg>
                       </a>
                     </li>
-                    <li>
-                      <a href="#">
+                    <li class="team-vectorials-grid__item">
+                      <a class="team-vectorials-grid__svg" href="#">
                         <svg width="20" height="20">
                           <use href="./Images/icon.svg.svg#icon-facebook"></use>
                         </svg>
                       </a>
                     </li>
-                    <li>
-                      <a href="#">
+                    <li class="team-vectorials-grid__item">
+                      <a class="team-vectorials-grid__svg" href="#">
                         <svg width="20" height="20">
                           <use
                             href="./Images/icon.svg.svg#icon-linkedin2"
@@ -221,22 +251,15 @@
                     </li>
                   </ul>
                 </div>
-              </div>
             </li>
-            <li>
-              <div class="border-line2">
-                <img
-                  width="270px"
-                  height="260px"
-                  src="Images/img12.jpg"
-                  alt="TeamMember"
-                />
-                <h3>Kylie Evans</h3>
-                <p>Frontend Developer</p>
+            <li  class="team__item">
+                <img class="team__image" width="270px"height="260px"src="Images/img13.jpg"alt="TeamMember"/>
+                <h3 class="team__name">Ryan Harris</h3>
+                <p class="team__accupation">Marketing</p>
                 <div class="our-team-vectorial">
-                  <ul class="team-vectorials unstyled-list">
-                    <li>
-                      <a href="#">
+                  <ul class="team-vectorials-grid unstyled-list">
+                    <li class="team-vectorials-grid__item">
+                      <a class="team-vectorials-grid__svg" href="#">
                         <svg width="20" height="20">
                           <use
                             href="./Images/icon.svg.svg#icon-instagram"
@@ -244,22 +267,22 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
-                      <a href="#">
+                    <li class="team-vectorials-grid__item">
+                      <a class="team-vectorials-grid__svg"  href="#">
                         <svg width="20" height="20">
                           <use href="./Images/icon.svg.svg#icon-twitter"></use>
                         </svg>
                       </a>
                     </li>
-                    <li>
-                      <a href="#">
+                    <li class="team-vectorials-grid__item">
+                      <a class="team-vectorials-grid__svg" href="#">
                         <svg width="20" height="20">
                           <use href="./Images/icon.svg.svg#icon-facebook"></use>
                         </svg>
                       </a>
                     </li>
-                    <li>
-                      <a href="#">
+                    <li class="team-vectorials-grid__item">
+                      <a class="team-vectorials-grid__svg" href="#">
                         <svg width="20" height="20">
                           <use
                             href="./Images/icon.svg.svg#icon-linkedin2"
@@ -269,69 +292,14 @@
                     </li>
                   </ul>
                 </div>
-              </div>
             </li>
-            <li>
-              <div class="border-line2">
-                <img
-                  width="270px"
-                  height="260px"
-                  src="Images/img13.jpg"
-                  alt="TeamMember"
-                />
-                <h3>Ryan Harris</h3>
-                <p>Marketing</p>
+            <li class="team__item">
+                <img class="team__image"width="270px"height="260px"src="Images/img14.jpg"alt="TeamMember"/>
+                <h3 class="team__name">Tyler Moore</h3>
+                <p class="team__accupation">UI Designer</p>
                 <div class="our-team-vectorial">
-                  <ul class="team-vectorials unstyled-list">
-                    <li>
-                      <a href="#">
-                        <svg width="20" height="20">
-                          <use
-                            href="./Images/icon.svg.svg#icon-instagram"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <svg width="20" height="20">
-                          <use href="./Images/icon.svg.svg#icon-twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <svg width="20" height="20">
-                          <use href="./Images/icon.svg.svg#icon-facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <svg width="20" height="20">
-                          <use
-                            href="./Images/icon.svg.svg#icon-linkedin2"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="border-line2">
-                <img
-                  width="270px"
-                  height="260px"
-                  src="Images/img14.jpg"
-                  alt="TeamMember"
-                />
-                <h3>Tyler Moore</h3>
-                <p>UI Designer</p>
-                <div class="our-team-vectorial">
-                  <ul class="team-vectorials unstyled-list">
-                    <li>
+                  <ul class="team-vectorials-grid unstyled-list">
+                    <li class="team-vectorials-grid__item">
                       <a href="#">
                         <svg width="20" height="20">
                           <use
